@@ -29,6 +29,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Compile (syntax check)
+        run: |
+          python -m compileall feedback.py
+
+
       - name: Run unit tests
         run: |
           python -m unittest discover -s tests -p "test_*.py" -v
