@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch, Mock
-import feedback  # imports your feedback.py module
+import feedback
 
 
 class TestFeedbackGenerator(unittest.TestCase):

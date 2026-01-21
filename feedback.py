@@ -47,20 +47,6 @@ def build_review_prompt(code: str, language: str = "Python") -> str:
             {code}
             ```
         """)
-    # return textwrap.dedent(f"""
-    # "You are an experienced {language} teaching assistant.
-    # Do not add any revised or rewritten or suggested code explicitly in your response. Only give text suggesstions.
-    # Your job is to:
-    # 1. Briefly summarize what the code is trying to do.
-    # 2. Point out any bugs or logical errors.
-    # 3. Comment on style, readability, and naming.
-
-    # Here is the student's code:
-
-    # ```{language}
-    # {code}
-    # ```
-    # """)
 
 
 
