@@ -93,23 +93,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     feedback = review_code(args.file, args.lang)
-#     given_code = """
-# def sub(a, b):
-#     # adds 2 numbers
-#     return a -  b
-
-# def main():
-#     x = 5
-#     y = 1
-#     print(sub(x, y))
-
-# if __name__ == "__main__":
-#     main()"""
-
-#     prompt = build_review_prompt(given_code, language="Python")
-#     feedback = ask_ollama(prompt)
-#     print("---Model Feedback---")
-#     print(feedback)
 
 
 
